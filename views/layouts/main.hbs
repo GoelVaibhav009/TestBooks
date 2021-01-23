@@ -10,12 +10,18 @@
     <title>StoryBooks</title>
 </head>
 <body>
+    {{> _header}}
     <div class="container">
         {{{body}}}
     </div>
     
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+      
+    {{!-- For the functioning of the navbar --}}
+
+    <script>
+        M.Sidenav.init(document.querySelector('.sidenav'))  // Doubt
+    </script>
 </body>
 </html>
