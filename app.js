@@ -29,10 +29,10 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 //Handlebars Helpers
-const { formatDate } = require('./helpers/hbs')
+const { formatDate, stripTags,truncate,editIcon, select  } = require('./helpers/hbs')
 
 //Handlesbars
-app.engine('.hbs', exphbs({ helpers: {formatDate}, defaultLayout: 'main', extname: '.hbs'}))
+app.engine('.hbs', exphbs({ helpers: {formatDate, stripTags, truncate, editIcon, select}, defaultLayout: 'main', extname: '.hbs'}))
 app.set('view engine', '.hbs')
 
 //Sessions
@@ -46,6 +46,12 @@ app.use(session({
 //Passport middlewares
 app.use(passport.initialize())
 app.use(passport.session())
+
+//Set global variable
+app.use((req, res, next) => {
+    res.locals.user = req.user || null
+    next()
+})
 
 // Static folder
 app.use(express.static(path.join(__dirname, 'public'))) 
