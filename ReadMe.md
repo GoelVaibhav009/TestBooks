@@ -4,6 +4,8 @@
 
 This app uses Node.js/Express/MongoDB with Google OAuth for authentication
 
+## GiF
+<img  alt="GIF" src="public/images/Gif.gif">
 ## Screenshots
 <img width="30%" alt="Login Page" src="public/images/Login.png">&nbsp; &nbsp;&nbsp; &nbsp;
 <img width="30%" alt="Auth Page" src="public/images/AuthPage.png">&nbsp; &nbsp;&nbsp; &nbsp;
