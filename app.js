@@ -8,6 +8,7 @@ const exphbs = require('express-handlebars')
 const passport = require('passport')
 const session = require('express-session')
 const MongoStore = require('connect-mongo') (session)
+
 const connectDB = require('./config/db')
 
 //Load config
