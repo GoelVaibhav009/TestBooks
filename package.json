@@ -2,6 +2,9 @@
   "name": "testbooks",
   "version": "1.0.0",
   "description": "App to create public and private stories.",
+  "engines": {
+    "node": "12.11.1"
+  },
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
