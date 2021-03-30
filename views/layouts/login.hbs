@@ -1,25 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/style.css">
-    <title>StoryBooks Login</title>
-</head>
-<body>
-    <div class="container login-container">
-        <div class="card">
-            <div class="card-content">
-                     {{{body}}}
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+                               integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <title>StoryBooks Login</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- Image and text -->
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIrdW92_X27oH9t5gFa32LcpO5OAmQ9IwdQ&usqp=CAU" width="180" height="50" class="d-inline-block align-top" alt=""> -->
+                    <h3 style = "color: #FFC300;"><i class="fas justify fa-book-reader"></i> StoryBooks</h3>
+                </a>
+
+                <!-- <button type="button" class="btn btn-danger">
+                    <a href="/auth/google" class="">
+                    <i class="fab fa-google left"></i> Log In With Google
+                    </a>
+                    </button> --> 
+            </nav>
+
+            <div class="container login-container">
+                <div class="card">
+                    <div class="card-content">
+                        {{{body}}}
+                    </div>
+                </div>
             </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         </div>
-    </div>
-    
+    </body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-</body>
 </html>
+
+<style>
+body {
+    background-color: #FFC300;
+}
+.container {
+    /* background-image:
+       url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-english-training-class-enrollment-poster-background-material-image_156800.jpg");
+     */
+}
+
+
+        .navbar {
+            padding-right: 40px; 
+            padding-left: 40px; 
+            padding-bottom: 100px;
+            /*
+               background-image:
+                   url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-english-training-class-enrollment-poster-background-material-image_156800.jpg");
+             */
+            background-color: #900C3F;
+            /* Not working here had to do inline */
+            color: #FFC300;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .fas { 
+            font-size: 60px;
+
+        }
+        .login-container {}
+
+        .card-content {
+
+            background-color: #900C3F;
+            /*
+               background-image:
+                   url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-english-training-class-enrollment-poster-background-material-image_156800.jpg");
+             */
+        }
+        body {
+            /*
+               background-image:
+                   url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-english-training-class-enrollment-poster-background-material-image_156800.jpg");
+             */
+        }
+</style>
