@@ -1,85 +1,12 @@
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
-<nav class="navbar">
+<nav class="grey darken-3">
     <div class="nav-wrapper container">
 
-        {{!-- <a href="#!" class="brand-logo right">{{story.user.displayName}}</a> --}}
-
-        <!-- had to define color inline -->
-        <a href="#!" class="brand-logo center" style = "color:#FFC300;">StoryBooks</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large">
-            <i class="fas fa-bars"></i>
-        </a>
+        <a href="#!" class="brand-logo center">StoryBooks</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="fas fa-bars"></i></a>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="/stories" style = " color: #FFC300; font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 2rem;" > Public Stories</a></li>
-            <li><a href="/dashboard" style = " color: #FFC300; font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 2rem;" > Dashboard</a></li>
-            <li><a href="/auth/logout" style = " color: #FFC300; font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 2rem;" > Logout</a></li>
+            <li><a href="/stories">Public Stories</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/auth/logout">Logout</a></li>
         </ul>
     </div>
 </nav>
-
-<style>
-.navbar {
-    background-color: #900C3F;
-    padding-bottom: 3rem;
-}
-.brand-logo { 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #FFC300;
-}
-
-.sidenav { 
-    background-color: #900C3F;
-}
-
-/*not working therefore choosed inline css*/
-li a { 
-    color: #FFC300;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-        li a {
-            border-bottom: 2px solid #FFC300;
-
-        }
-
-        .fas { 
-            color: #FFC300;
-            font-size: 3rem;
-        }
-
-
-
-</style>
-
-<script>
-
-    let object = document.getElementById("mobile-demo");
-        object.addEventListener("mouseover", function(event) {
-                // event.target.style.fontSize = "2.5rem";
-                event.target.style.color = "#900C3F";
-                event.target.style.backgroundColor = "#FFC300";
-
-                // setTimeout(function() { 
-                //         // event.target.style.fontSize = "2rem";
-                //         event.target.style.color = "#FFC300";
-                //         event.target.style.backgroundColor = "#900C3F";
-                //     }, 200);
-            }
-            );
-
-        object.addEventListener("mouseout", function(event) {
-                // event.target.style.fontSize = "2.5rem";
-                event.target.style.color = "#FFC300";
-                event.target.style.backgroundColor = "#900C3F";
-
-                // setTimeout(function() { 
-                //         // event.target.style.fontSize = "2rem";
-                //         event.target.style.color = "#FFC300";
-                //         event.target.style.backgroundColor = "#900C3F";
-                //     }, 200);
-            }
-            );
-</script> 
